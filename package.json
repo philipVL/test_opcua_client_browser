@@ -1,0 +1,12 @@
+{
+    "name": "test_opcua_client_browser",
+    "description": "OPC_UA test browser en opc client",
+    "version": "0.0.1",
+    "dependencies": {},
+    "node-red": {
+        "settings": {
+            "flowFile": "flowsOPCUA_client.json",
+            "credentialsFile": "flowsOPCUA_client_cred.json"
+        }
+    }
+}
