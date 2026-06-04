@@ -2,10 +2,448 @@
     {
         "id": "443cf783bc3cd3f5",
         "type": "tab",
-        "label": "Flow 1",
+        "label": "test node-red",
         "disabled": false,
         "info": "",
         "env": []
+    },
+    {
+        "id": "94198c681a3e4bb2",
+        "type": "tab",
+        "label": "nodered mqtt broker setup",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b0b6baff8d10982d",
+        "type": "tab",
+        "label": "mongodb",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2709a3e94699a47a",
+        "type": "tab",
+        "label": "system info",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a2e35f0de4403da7",
+        "type": "tab",
+        "label": "shelly",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1f072cd6334891b3",
+        "type": "tab",
+        "label": "collect mqtt data",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b1bea394dc7a42c6",
+        "type": "group",
+        "z": "94198c681a3e4bb2",
+        "name": "Opzetten MQTT broker vanuit NODERED",
+        "style": {
+            "stroke": "#001f60",
+            "fill": "#bfc7d7",
+            "label": true,
+            "color": "#ff0000"
+        },
+        "nodes": [
+            "c84a05f0bbbe004d",
+            "ccfd6ece256c69e4",
+            "88066154c492dc7e"
+        ],
+        "x": 254,
+        "y": 79,
+        "w": 552,
+        "h": 182
+    },
+    {
+        "id": "690a2e607c44d148",
+        "type": "group",
+        "z": "94198c681a3e4bb2",
+        "name": "PUB/SUB op nodered MQTT broker",
+        "style": {
+            "stroke": "#777777",
+            "fill": "#d1d1d1",
+            "label": true,
+            "color": "#0070c0"
+        },
+        "nodes": [
+            "21fb8ca16eec5fc8",
+            "e4179235b2804000",
+            "52471af6cabf0fe3",
+            "b241faf0af7e6c15",
+            "4b5ce24eee48a22b",
+            "c4ed883ce735519f"
+        ],
+        "x": 254,
+        "y": 319,
+        "w": 552,
+        "h": 302
+    },
+    {
+        "id": "d8cb26a76ec1c0d0",
+        "type": "group",
+        "z": "a2e35f0de4403da7",
+        "name": "contrrol remote",
+        "style": {
+            "stroke": "#ff0000",
+            "fill": "#ffbfbf",
+            "label": true,
+            "color": "#6f2fa0"
+        },
+        "nodes": [
+            "8a019ee2ce0d1fcb",
+            "76a93f690520c452",
+            "17051ab629b0c38c",
+            "15bb13fba04c41fb",
+            "06ff13db3ac08890",
+            "f96295794140a394"
+        ],
+        "x": 34,
+        "y": 119,
+        "w": 1772,
+        "h": 82
+    },
+    {
+        "id": "4c7085aa27858ccb",
+        "type": "group",
+        "z": "2709a3e94699a47a",
+        "name": "Check IP-device",
+        "style": {
+            "stroke": "#0070c0",
+            "fill": "#bfdbef",
+            "label": true,
+            "color": "#6f2fa0"
+        },
+        "nodes": [
+            "52478d3aae05660c",
+            "45b221ddc26311e1",
+            "bf6e2002942cf570"
+        ],
+        "x": 234,
+        "y": 499,
+        "w": 712,
+        "h": 82
+    },
+    {
+        "id": "737e0c12ec79f2af",
+        "type": "group",
+        "z": "2709a3e94699a47a",
+        "name": "check Network/OS/Mem",
+        "style": {
+            "stroke": "#6f2fa0",
+            "fill": "#dbcbe7",
+            "label": true,
+            "color": "#ff0000"
+        },
+        "nodes": [
+            "84307541c88768d7",
+            "74d0de05e961a90e",
+            "851316be5d25d625",
+            "bde77aa481960541",
+            "1690b674e55c821e"
+        ],
+        "x": 234,
+        "y": 199,
+        "w": 712,
+        "h": 242
+    },
+    {
+        "id": "a2786ee5fd4ff54c",
+        "type": "group",
+        "z": "b0b6baff8d10982d",
+        "name": "Insert in mongodb from Virtual Machine \\n localhost:27017 binds to mongoDB docker",
+        "style": {
+            "label": true,
+            "stroke": "#ffff00",
+            "fill": "#ffffbf",
+            "color": "#0070c0"
+        },
+        "nodes": [
+            "d195bd5ab968af1e",
+            "29b6d387eeef2584",
+            "1a27f4c4dd0cd22d",
+            "9b77c09e1161fcd1"
+        ],
+        "x": 74,
+        "y": 183,
+        "w": 912,
+        "h": 98
+    },
+    {
+        "id": "305cbd507da45776",
+        "type": "group",
+        "z": "1f072cd6334891b3",
+        "name": "Collect MQTT PF vibration",
+        "style": {
+            "stroke": "#92d04f",
+            "fill": "#e3f3d3",
+            "label": true,
+            "color": "#6f2fa0"
+        },
+        "nodes": [
+            "442e3cff419652b0",
+            "cb41f07d077de59b",
+            "f714b40f16bc96f3",
+            "aee4dd8a5b71c201",
+            "1660c4d3ec9caf4c"
+        ],
+        "x": 154,
+        "y": 319,
+        "w": 952,
+        "h": 162
+    },
+    {
+        "id": "3f3ef41de1809318",
+        "type": "group",
+        "z": "1f072cd6334891b3",
+        "name": "Collect MQTT PF vibration",
+        "style": {
+            "stroke": "#92d04f",
+            "fill": "#e3f3d3",
+            "label": true,
+            "color": "#6f2fa0"
+        },
+        "nodes": [
+            "d20c36ee950a8403",
+            "ea7de58ddc1c5cfd",
+            "c884aa2c177c9e14",
+            "815ee4b4249850d2",
+            "06ba00b0d2efc3e4"
+        ],
+        "x": 154,
+        "y": 519,
+        "w": 952,
+        "h": 162
+    },
+    {
+        "id": "95ad2db641d6e17e",
+        "type": "ui_tab",
+        "name": "test node red",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "fc321e843898abe0",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "dbe14b362178bfd4",
+        "type": "ui_group",
+        "name": "eerste_test",
+        "tab": "95ad2db641d6e17e",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6c67fd8465bf6f41",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e2948f4fdbf9a468",
+        "type": "mqtt-broker",
+        "name": "Hivemq private cloud",
+        "broker": "85c55dc356e94eac816c231f4f9a8030.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "0c92a3ef5798b800",
+        "type": "ui_tab",
+        "name": "verbruikers",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2d0a912acafce1f6",
+        "type": "ui_group",
+        "name": "powerstrips",
+        "tab": "0c92a3ef5798b800",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a8e4be6553038d0b",
+        "type": "ui_group",
+        "name": "Trending",
+        "tab": "8b0d212fb125fedb",
+        "order": 1,
+        "disp": true,
+        "width": "18",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8b0d212fb125fedb",
+        "type": "ui_tab",
+        "name": "Measurements",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
     },
     {
         "id": "85c6539d2a36bad8",
@@ -48,8 +486,951 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 600,
+        "x": 840,
         "y": 100,
         "wires": []
+    },
+    {
+        "id": "45371ab6401b5a43",
+        "type": "ui_button",
+        "z": "443cf783bc3cd3f5",
+        "name": "",
+        "group": "dbe14b362178bfd4",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "hello world",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "hello world",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 410,
+        "y": 240,
+        "wires": [
+            [
+                "8a07e5de48518851"
+            ]
+        ]
+    },
+    {
+        "id": "8a07e5de48518851",
+        "type": "ui_text",
+        "z": "443cf783bc3cd3f5",
+        "group": "dbe14b362178bfd4",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Klik op knop",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 650,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "c8266a93f17beeb4",
+        "type": "ui_button",
+        "z": "443cf783bc3cd3f5",
+        "name": "",
+        "group": "dbe14b362178bfd4",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "wis",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": " ",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 430,
+        "y": 300,
+        "wires": [
+            [
+                "8a07e5de48518851"
+            ]
+        ]
+    },
+    {
+        "id": "c84a05f0bbbe004d",
+        "type": "aedes broker",
+        "z": "94198c681a3e4bb2",
+        "g": "b1bea394dc7a42c6",
+        "name": "nodered mqtt broker",
+        "mqtt_port": 1883,
+        "mqtt_ws_bind": "port",
+        "mqtt_ws_port": "",
+        "mqtt_ws_path": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "persistence_bind": "memory",
+        "dburl": "",
+        "persist_to_file": true,
+        "usetls": false,
+        "x": 370,
+        "y": 160,
+        "wires": [
+            [
+                "ccfd6ece256c69e4"
+            ],
+            [
+                "88066154c492dc7e"
+            ]
+        ]
+    },
+    {
+        "id": "ccfd6ece256c69e4",
+        "type": "debug",
+        "z": "94198c681a3e4bb2",
+        "g": "b1bea394dc7a42c6",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "88066154c492dc7e",
+        "type": "debug",
+        "z": "94198c681a3e4bb2",
+        "g": "b1bea394dc7a42c6",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "21fb8ca16eec5fc8",
+        "type": "mqtt out",
+        "z": "94198c681a3e4bb2",
+        "g": "690a2e607c44d148",
+        "name": "",
+        "topic": "coock/test",
+        "qos": "0",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "6c67fd8465bf6f41",
+        "x": 680,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "e4179235b2804000",
+        "type": "mqtt in",
+        "z": "94198c681a3e4bb2",
+        "g": "690a2e607c44d148",
+        "name": "",
+        "topic": "coock/test",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "6c67fd8465bf6f41",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 380,
+        "y": 480,
+        "wires": [
+            [
+                "b241faf0af7e6c15"
+            ]
+        ]
+    },
+    {
+        "id": "52471af6cabf0fe3",
+        "type": "inject",
+        "z": "94198c681a3e4bb2",
+        "g": "690a2e607c44d148",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"speed\":321}",
+        "payloadType": "json",
+        "x": 370,
+        "y": 360,
+        "wires": [
+            [
+                "21fb8ca16eec5fc8"
+            ]
+        ]
+    },
+    {
+        "id": "b241faf0af7e6c15",
+        "type": "debug",
+        "z": "94198c681a3e4bb2",
+        "g": "690a2e607c44d148",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "4b5ce24eee48a22b",
+        "type": "mqtt in",
+        "z": "94198c681a3e4bb2",
+        "g": "690a2e607c44d148",
+        "name": "",
+        "topic": "#",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "6c67fd8465bf6f41",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 370,
+        "y": 580,
+        "wires": [
+            [
+                "c4ed883ce735519f"
+            ]
+        ]
+    },
+    {
+        "id": "c4ed883ce735519f",
+        "type": "debug",
+        "z": "94198c681a3e4bb2",
+        "g": "690a2e607c44d148",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "d195bd5ab968af1e",
+        "type": "insertOne",
+        "z": "b0b6baff8d10982d",
+        "g": "a2786ee5fd4ff54c",
+        "name": "",
+        "x": 620,
+        "y": 240,
+        "wires": [
+            [
+                "9b77c09e1161fcd1"
+            ]
+        ]
+    },
+    {
+        "id": "29b6d387eeef2584",
+        "type": "change",
+        "z": "b0b6baff8d10982d",
+        "g": "a2786ee5fd4ff54c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "url",
+                "pt": "msg",
+                "to": "mongodb://admin:Ph1l1patM0ng0d8@localhost:27017",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "db_name",
+                "pt": "msg",
+                "to": "mycoockmongodb",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "db_collection",
+                "pt": "msg",
+                "to": "mycoockcollection",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 400,
+        "y": 240,
+        "wires": [
+            [
+                "d195bd5ab968af1e"
+            ]
+        ]
+    },
+    {
+        "id": "1a27f4c4dd0cd22d",
+        "type": "inject",
+        "z": "b0b6baff8d10982d",
+        "g": "a2786ee5fd4ff54c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"meting\":321}",
+        "payloadType": "json",
+        "x": 190,
+        "y": 240,
+        "wires": [
+            [
+                "29b6d387eeef2584"
+            ]
+        ]
+    },
+    {
+        "id": "9b77c09e1161fcd1",
+        "type": "debug",
+        "z": "b0b6baff8d10982d",
+        "g": "a2786ee5fd4ff54c",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "84307541c88768d7",
+        "type": "OS",
+        "z": "2709a3e94699a47a",
+        "g": "737e0c12ec79f2af",
+        "name": "",
+        "x": 650,
+        "y": 240,
+        "wires": [
+            [
+                "851316be5d25d625"
+            ]
+        ]
+    },
+    {
+        "id": "74d0de05e961a90e",
+        "type": "inject",
+        "z": "2709a3e94699a47a",
+        "g": "737e0c12ec79f2af",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 340,
+        "y": 240,
+        "wires": [
+            [
+                "bde77aa481960541",
+                "84307541c88768d7",
+                "1690b674e55c821e"
+            ]
+        ]
+    },
+    {
+        "id": "851316be5d25d625",
+        "type": "debug",
+        "z": "2709a3e94699a47a",
+        "g": "737e0c12ec79f2af",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "bde77aa481960541",
+        "type": "NetworkIntf",
+        "z": "2709a3e94699a47a",
+        "g": "737e0c12ec79f2af",
+        "name": "",
+        "x": 650,
+        "y": 320,
+        "wires": [
+            [
+                "851316be5d25d625"
+            ]
+        ]
+    },
+    {
+        "id": "1690b674e55c821e",
+        "type": "Drives",
+        "z": "2709a3e94699a47a",
+        "g": "737e0c12ec79f2af",
+        "name": "",
+        "x": 650,
+        "y": 400,
+        "wires": [
+            [
+                "851316be5d25d625"
+            ]
+        ]
+    },
+    {
+        "id": "52478d3aae05660c",
+        "type": "ping-ip",
+        "z": "2709a3e94699a47a",
+        "g": "4c7085aa27858ccb",
+        "name": "laptaop dell",
+        "ipAddress": "",
+        "timeout": 5000,
+        "x": 630,
+        "y": 540,
+        "wires": [
+            [
+                "bf6e2002942cf570"
+            ],
+            [
+                "bf6e2002942cf570"
+            ]
+        ]
+    },
+    {
+        "id": "45b221ddc26311e1",
+        "type": "inject",
+        "z": "2709a3e94699a47a",
+        "g": "4c7085aa27858ccb",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "100.93.71.13",
+        "payloadType": "str",
+        "x": 350,
+        "y": 540,
+        "wires": [
+            [
+                "52478d3aae05660c"
+            ]
+        ]
+    },
+    {
+        "id": "bf6e2002942cf570",
+        "type": "debug",
+        "z": "2709a3e94699a47a",
+        "g": "4c7085aa27858ccb",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "8a019ee2ce0d1fcb",
+        "type": "ui_template",
+        "z": "a2e35f0de4403da7",
+        "g": "d8cb26a76ec1c0d0",
+        "group": "2d0a912acafce1f6",
+        "name": "shelly powerstrip",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"powerstrip\">\n\n    <div class=\"socket\" ng-repeat=\"n in [1,2,3,4]\" ng-class=\"{'on': plugs['plug'+n]}\" ng-click=\"toggle(n)\">\n    \n        <div class=\"led\"></div>\n    \n        <div class=\"socket-face\">\n            <div class=\"hole left\"></div>\n            <div class=\"hole right\"></div>\n        </div>\n    \n        <div class=\"label\">\n            Plug {{n}}<br>\n            {{plugs['plug'+n] ? 'ON' : 'OFF'}}\n        </div>\n    \n    </div>\n\n</div>\n\n<style>\n.powerstrip {\n    display:flex;\n    justify-content:space-around;\n    align-items:center;\n\n    padding:20px;\n    margin:10px;\n\n    background:linear-gradient(to bottom,#f5f5f5,#d9d9d9);\n    border-radius:20px;\n\n    border:2px solid #aaa;\n    box-shadow:\n        inset 0 2px 5px rgba(255,255,255,0.8),\n        inset 0 -2px 5px rgba(0,0,0,0.15),\n        0 3px 8px rgba(0,0,0,0.25);\n}\n\n.socket {\n    width:90px;\n    height:120px;\n\n    border-radius:15px;\n    background:#ececec;\n\n    display:flex;\n    flex-direction:column;\n    align-items:center;\n    justify-content:center;\n\n    cursor:pointer;\n\n    transition:all 0.2s ease;\n    position:relative;\n}\n\n.socket:hover {\n    transform:translateY(-2px);\n}\n\n.socket:active {\n    transform:translateY(1px);\n}\n\n.socket-face {\n    width:60px;\n    height:60px;\n    border-radius:50%;\n\n    background:#d0d0d0;\n\n    display:flex;\n    justify-content:center;\n    align-items:center;\n\n    position:relative;\n\n    box-shadow:\n        inset 0 2px 4px rgba(255,255,255,0.7),\n        inset 0 -2px 4px rgba(0,0,0,0.15);\n}\n\n.hole {\n    width:10px;\n    height:10px;\n\n    background:#222;\n    border-radius:50%;\n\n    position:absolute;\n    top:25px;\n}\n\n.hole.left {\n    left:18px;\n}\n\n.hole.right {\n    right:18px;\n}\n\n.led {\n    width:12px;\n    height:12px;\n    border-radius:50%;\n\n    background:#555;\n    margin-bottom:10px;\n\n    box-shadow:0 0 2px rgba(0,0,0,0.5);\n}\n\n.socket.on .led {\n    background:#00ff00;\n    box-shadow:\n        0 0 5px #00ff00,\n        0 0 10px #00ff00,\n        0 0 20px #00ff00;\n}\n\n.label {\n    margin-top:10px;\n    font-size:12px;\n    font-weight:bold;\n    color:#444;\n}\n</style>\n\n<script>\n(function(scope) {\n\n    // initial stable state\n    scope.plugs = {\n        plug1: false,\n        plug2: false,\n        plug3: false,\n        plug4: false\n    };\n\n    // send toggle command on click\n    scope.toggle = function(plug) {\n        scope.send({\n            payload: {\n                plug: plug,\n                action: \"toggle\"\n            }\n        });\n    };\n\n    // update only changed keys (no flicker)\n    scope.$watch('msg', function(msg) {\n        if (!msg || !msg.payload) return;\n\n        var p = msg.payload;\n\n        if (p.plug1 !== undefined) scope.plugs.plug1 = !!p.plug1;\n        if (p.plug2 !== undefined) scope.plugs.plug2 = !!p.plug2;\n        if (p.plug3 !== undefined) scope.plugs.plug3 = !!p.plug3;\n        if (p.plug4 !== undefined) scope.plugs.plug4 = !!p.plug4;\n    });\n\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 450,
+        "y": 160,
+        "wires": [
+            [
+                "17051ab629b0c38c"
+            ]
+        ]
+    },
+    {
+        "id": "76a93f690520c452",
+        "type": "inject",
+        "z": "a2e35f0de4403da7",
+        "g": "d8cb26a76ec1c0d0",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 160,
+        "wires": [
+            [
+                "8a019ee2ce0d1fcb"
+            ]
+        ]
+    },
+    {
+        "id": "17051ab629b0c38c",
+        "type": "function",
+        "z": "a2e35f0de4403da7",
+        "g": "d8cb26a76ec1c0d0",
+        "name": "toggle de gekozen plug",
+        "func": "let plug_id= msg.payload.plug-1\nmsg.payload = {\n    method: \"Switch.Toggle\",\n    parameters : {\n        id : plug_id,\n    }\n};\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 160,
+        "wires": [
+            [
+                "f96295794140a394"
+            ]
+        ]
+    },
+    {
+        "id": "15bb13fba04c41fb",
+        "type": "template",
+        "z": "a2e35f0de4403da7",
+        "g": "d8cb26a76ec1c0d0",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n    \"plug1\": {{payload.switch0.output}},\n    \"plug2\": {{payload.switch1.output}},\n    \"plug3\": {{payload.switch2.output}},\n    \"plug4\": {{payload.switch3.output}}\n  }\n",
+        "output": "json",
+        "x": 1720,
+        "y": 160,
+        "wires": [
+            [
+                "8a019ee2ce0d1fcb"
+            ]
+        ]
+    },
+    {
+        "id": "06ff13db3ac08890",
+        "type": "mqtt in",
+        "z": "a2e35f0de4403da7",
+        "g": "d8cb26a76ec1c0d0",
+        "name": "",
+        "topic": "powerstrip/status",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e2948f4fdbf9a468",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1500,
+        "y": 160,
+        "wires": [
+            [
+                "15bb13fba04c41fb"
+            ]
+        ]
+    },
+    {
+        "id": "f96295794140a394",
+        "type": "mqtt out",
+        "z": "a2e35f0de4403da7",
+        "g": "d8cb26a76ec1c0d0",
+        "name": "",
+        "topic": "powerstrip/control",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e2948f4fdbf9a468",
+        "x": 1070,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "83153173c05b7154",
+        "type": "mqtt in",
+        "z": "1f072cd6334891b3",
+        "name": "",
+        "topic": "coock/vibration/#",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e2948f4fdbf9a468",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 260,
+        "y": 200,
+        "wires": [
+            [
+                "dad03152a324845f"
+            ]
+        ]
+    },
+    {
+        "id": "dad03152a324845f",
+        "type": "debug",
+        "z": "1f072cd6334891b3",
+        "name": "debug 5",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "442e3cff419652b0",
+        "type": "mqtt in",
+        "z": "1f072cd6334891b3",
+        "g": "305cbd507da45776",
+        "name": "",
+        "topic": "coock/vibration/port/7/pdi",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e2948f4fdbf9a468",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 290,
+        "y": 440,
+        "wires": [
+            [
+                "cb41f07d077de59b",
+                "f714b40f16bc96f3"
+            ]
+        ]
+    },
+    {
+        "id": "cb41f07d077de59b",
+        "type": "debug",
+        "z": "1f072cd6334891b3",
+        "g": "305cbd507da45776",
+        "name": "debug 6",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "f714b40f16bc96f3",
+        "type": "function",
+        "z": "1f072cd6334891b3",
+        "g": "305cbd507da45776",
+        "name": "Extract vibration data and send 2 graph",
+        "func": "// Extract RMS values from incoming payload\nconst x = msg.payload.PD_ProcessData.Value_0__default__v_RMS__X_;\nconst y = msg.payload.PD_ProcessData.Value_1__default__v_RMS__Y_;\nconst z = msg.payload.PD_ProcessData.Value_2__default__v_RMS__Z_;\n\n// Only continue if all 3 values are available\nif (x != null && y != null && z != null) {\n\n    return [[\n        {\n            topic: \"RMS_X\",\n            payload: x\n        },\n        {\n            topic: \"RMS_Y\",\n            payload: y\n        },\n        {\n            topic: \"RMS_Z\",\n            payload: z\n        }\n    ]];\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 440,
+        "wires": [
+            [
+                "aee4dd8a5b71c201",
+                "1660c4d3ec9caf4c"
+            ]
+        ]
+    },
+    {
+        "id": "aee4dd8a5b71c201",
+        "type": "debug",
+        "z": "1f072cd6334891b3",
+        "g": "305cbd507da45776",
+        "name": "debug 7",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "1660c4d3ec9caf4c",
+        "type": "ui_chart",
+        "z": "1f072cd6334891b3",
+        "g": "305cbd507da45776",
+        "name": "",
+        "group": "a8e4be6553038d0b",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#008000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1030,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d20c36ee950a8403",
+        "type": "mqtt in",
+        "z": "1f072cd6334891b3",
+        "g": "3f3ef41de1809318",
+        "name": "",
+        "topic": "coock/vibration/port/1/pdi",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e2948f4fdbf9a468",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 290,
+        "y": 640,
+        "wires": [
+            [
+                "ea7de58ddc1c5cfd",
+                "c884aa2c177c9e14"
+            ]
+        ]
+    },
+    {
+        "id": "ea7de58ddc1c5cfd",
+        "type": "debug",
+        "z": "1f072cd6334891b3",
+        "g": "3f3ef41de1809318",
+        "name": "debug 9",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "c884aa2c177c9e14",
+        "type": "function",
+        "z": "1f072cd6334891b3",
+        "g": "3f3ef41de1809318",
+        "name": "Extract distance data and send 2 graph",
+        "func": "// Extract RMS values from incoming payload\nconst distance = msg.payload.P_ProcessData0.MV___Distance;\n\n\n// Only continue if values are available\nif (distance != null ) {\n    msg.payload=distance;\n    msg.topic=\"Distance\"\n\n    return msg\n        \n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 640,
+        "wires": [
+            [
+                "815ee4b4249850d2",
+                "06ba00b0d2efc3e4"
+            ]
+        ]
+    },
+    {
+        "id": "815ee4b4249850d2",
+        "type": "debug",
+        "z": "1f072cd6334891b3",
+        "g": "3f3ef41de1809318",
+        "name": "debug 10",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "06ba00b0d2efc3e4",
+        "type": "ui_chart",
+        "z": "1f072cd6334891b3",
+        "g": "3f3ef41de1809318",
+        "name": "",
+        "group": "a8e4be6553038d0b",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "10000",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#008000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1030,
+        "y": 640,
+        "wires": [
+            []
+        ]
     }
 ]
